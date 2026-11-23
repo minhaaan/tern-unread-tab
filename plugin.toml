@@ -1,0 +1,6 @@
+schema = 1
+id = "unread-tab"
+name = "Unread tab"
+version = "0.1.0"
+description = "안 보던 탭에서 에이전트 턴이 끝나면 탭을 주황으로 칠하고, 그 탭을 열면 원래 색으로 되돌린다."
+window = "window.luau"
