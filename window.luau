@@ -19,8 +19,8 @@ nav#tabbar button.kit-tab.working > span.tx > span.nm::before {
 	height: 0.85em;
 	margin-right: 0.4em;
 	vertical-align: -0.1em;
-	border: 2px solid rgba(140, 170, 255, 0.25);
-	border-top-color: rgb(140, 170, 255);
+	border: 2px solid rgba(232, 200, 120, 0.25);
+	border-top-color: rgb(232, 200, 120);
 	border-radius: 50%;
 	animation: unread-tab-spin 0.8s linear infinite;
 }
