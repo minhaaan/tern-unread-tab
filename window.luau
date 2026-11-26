@@ -1,9 +1,9 @@
 --!strict
 -- 에이전트가 일하는 탭은 이름 앞에 도는 링, 입력을 기다리는 탭은 "?"를 붙인다.
--- 안 보던 탭에서 턴이 끝나면 주황, 입력을 기다리면 빨강으로 칠하고, 그 탭을 열면 원래 색으로 되돌린다.
+-- 안 보던 탭에서 턴이 끝나면 보라, 입력을 기다리면 빨강으로 칠하고, 그 탭을 열면 원래 색으로 되돌린다.
 -- 칠하기 전 색은 tern.kv에 "tab:<id>" → 색 이름(없으면 "")으로 둔다. 재시작·리로드 뒤에도 되돌릴 수 있게.
 
-local UNREAD: TabColor = "orange"
+local UNREAD: TabColor = "purple"
 local WAITING: TabColor = "red"
 
 -- Tern은 에이전트가 일하는 탭 버튼에 `.working`을 단다. 이름(.nm)은 글자색이 투명(효과용)이라 링 색을 따로 준다.
@@ -19,8 +19,8 @@ nav#tabbar button.kit-tab.working > span.tx > span.nm::before {
 	height: 0.85em;
 	margin-right: 0.4em;
 	vertical-align: -0.1em;
-	border: 2px solid rgba(232, 200, 120, 0.25);
-	border-top-color: rgb(232, 200, 120);
+	border: 2px solid rgba(130, 80, 223, 0.25);
+	border-top-color: rgb(130, 80, 223);
 	border-radius: 50%;
 	animation: unread-tab-spin 0.8s linear infinite;
 }
